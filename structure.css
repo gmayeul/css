@@ -1,0 +1,60 @@
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    padding: 2em;
+}
+
+header, footer, main, aside {
+    padding: 10px;
+    text-align: center;
+    flex: 1 100%;
+}
+
+header {
+    background-color: tomato;
+}
+
+.left-aside {
+    background-color: gold;
+}
+
+.right-aside {
+    background-color: hotpink;
+}
+
+main {
+    background-color: deepskyblue;
+}
+
+footer {
+    background-color: lightgreen;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+@media all and (min-width: 600px) {
+    aside {
+        flex: 1 auto;
+    }
+}
+
+@media all and (min-width: 800px) {
+    main {
+        flex: 3 0px;
+        order: 2;
+    }
+
+    .left-aside {
+        order: 1;
+    }
+
+    .right-aside {
+        order: 3;
+    }
+
+    footer {
+        order: 4;
+    }
+}
