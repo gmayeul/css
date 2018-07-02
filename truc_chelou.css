@@ -1,0 +1,26 @@
+body {
+    background: #05ffa1;
+    animation: animbg 3s infinite;
+}
+
+.forme {
+    color: lightgray;
+    width: 200px;
+    height: 200px;
+    margin: 300px 300px;
+    background: #ff71ce;
+    animation: anim 8s infinite linear;   
+}
+
+.forme:hover {
+    width: 360px;
+}
+
+@keyframes anim {
+    50% {background: #01cdfe;}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes animbg {
+    50% {background: #fffb96;}
+}
