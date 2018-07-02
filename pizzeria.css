@@ -14,17 +14,18 @@ h2 {
 li {
 	display: inline-block;
 	border: 2px solid #660000;
-	background-color: #c03000;
-	padding: 10px;
 }
 
 nav a {
 	text-align: center;
 	color: #efecca;
 	text-decoration: none;
+	background-color: #c03000;
+	display: inline-block;
+	padding: 10px;
 }
 
-li:hover, li:active {
+nav a:hover, nav a:focus {
 	background-color: #009900;
 }
 
